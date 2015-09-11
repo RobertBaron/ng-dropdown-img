@@ -1,0 +1,91 @@
+ng-dropdown-img {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 2;
+}
+ng-dropdown-img .display {
+  padding: 5px 0px 0px 15px;
+  z-index: 2;
+  position: relative;
+  white-space: nowrap;
+  height: 34px;
+  border: 1px solid #777;
+}
+ng-dropdown-img .display::selection {
+  /*background-color: transparent;*/
+}
+ng-dropdown-img .display.placeholder {
+  color: gray;
+}
+ng-dropdown-img .arrow {
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  right: 12px;
+  top: 21.5px;
+  pointer-events: none;
+}
+ng-dropdown-img .arrow.up {
+  border-bottom: 6px solid rgb(109, 117, 122);
+}
+ng-dropdown-img .arrow.down {
+  border-top: 6px solid rgb(109, 117, 122);
+}
+ng-dropdown-img div img {
+  max-height: 33px;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+ng-dropdown-img span{
+  padding-left: 5px;
+}
+ng-dropdown-img .container {
+  padding: 0px;
+  background-color: #fff;
+  outline: 1px solid #dbdbdb;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  max-height: 222px;
+  overflow: auto;
+}
+ng-dropdown-img .container.show {
+  display: block;
+}
+ng-dropdown-img .container .item {
+
+  margin: 0;
+  padding: 10px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ng-dropdown-img .container .item:hover {
+  background-color: #e3f7fe;
+}
+
+
+ng-dropdown-img .inputFilter {
+    position: absolute;
+    z-index: 3;
+    margin-top: -39px;
+    height: 25px;
+    outline: none;
+    margin-left: 16px;
+}
+
+ng-dropdown-img .inputFilter.show {
+  display:block;
+}
+
+ng-dropdown-img .inputFilter.hide {
+  display: none !important;
+}

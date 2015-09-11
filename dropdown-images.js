@@ -1,11 +1,11 @@
-angular.module('rbaron.dropdownImages', [])
-.directive('ng-dropdown-img', ['$timeout',
+angular.module('xxx', [])
+.directive('ngDropdownImg', ['$timeout',
   function ($timeout) {
 
     return {
       restrict: 'E',
       transclude: true,
-      templateUrl: 'templates/dropdown-images.html',
+      templateUrl: 'bower_components/dropdown-images/templates/dropdown-images.html',
       scope: {
         isDisabled: '=',
         triggerChange: '=change',
