@@ -1,0 +1,27 @@
+{
+  "name": "dropdown-images",
+  "version": "0.0.0",
+  "description": "Useful directive to load a dropdown with data and images,  filtering capabilities",
+  "main": "dropdown-images.js",
+  "keywords": [
+    "angularjs",
+    "dropdown",
+    "images",
+    "dropdown",
+    "filtering"
+  ],
+  "authors": [
+    "Robert Baron <rbaronmonge@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.17"
+  }
+}
